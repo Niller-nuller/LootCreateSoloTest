@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class LootCrateSystem {
     private final Scanner input = new Scanner(System.in);
     private final List<Player> players = new ArrayList<>();
-    private List<LootCreate> crates = new ArrayList<>();
 
     public LootCrateSystem(){}
 

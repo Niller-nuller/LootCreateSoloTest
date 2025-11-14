@@ -13,7 +13,6 @@ public class Player {
         this.credits = 500;
         this.inventory = new ArrayList<>();
     }
-
     public String getName() {
         return name;
     }
@@ -26,18 +25,6 @@ public class Player {
     public void deductCredits(int amount){
         this.credits -= amount;
     }
-
-    //Print
-    public void printPlayerInfo(){
-        System.out.println("Name: " + getName());
-        System.out.println("Credits: " + getCredits());
-        System.out.println("You " + getName() + " own the following items");
-        for (String s : inventory) {
-            System.out.println("Item: "+s);
-        }
-    }
-    //Add credits
-
     public void addItem(String item){
         this.inventory.add(item);
     }
